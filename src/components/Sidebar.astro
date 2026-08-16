@@ -33,15 +33,30 @@ import ThemeToggle from "./ThemeToggle.astro";
   <div class="side-links">
     {profile.location && <span class="muted">{profile.location}</span>}
     {
-      profile.links.map((l) => (
-        <a
-          href={l.href}
-          target={l.newTab ? "_blank" : undefined}
-          rel={l.newTab ? "noopener noreferrer" : undefined}
-        >
-          {l.label}
-        </a>
-      ))
+      profile.links.map((l) =>
+        l.copyText ? (
+          <span class="contact-link">
+            <a href={l.href}>{l.label}</a>
+            <button
+              type="button"
+              class="copy-email"
+              data-copy-email={l.copyText}
+              aria-label={`Copy ${l.label}`}
+              aria-live="polite"
+            >
+              Copy
+            </button>
+          </span>
+        ) : (
+          <a
+            href={l.href}
+            target={l.newTab ? "_blank" : undefined}
+            rel={l.newTab ? "noopener noreferrer" : undefined}
+          >
+            {l.label}
+          </a>
+        ),
+      )
     }
     {site.theme.toggle && <ThemeToggle />}
   </div>
@@ -57,5 +72,25 @@ import ThemeToggle from "./ThemeToggle.astro";
     // runs and the error event is long gone. Check for that case directly:
     // finished loading but zero pixels wide means it failed.
     if (img.complete && img.naturalWidth === 0) drop();
+  });
+
+  document.querySelectorAll("[data-copy-email]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const address = button.dataset.copyEmail;
+      if (!address) return;
+
+      try {
+        await navigator.clipboard.writeText(address);
+        button.textContent = "Copied";
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 1600);
+      } catch {
+        button.textContent = "Copy failed";
+        setTimeout(() => {
+          button.textContent = "Copy";
+        }, 1600);
+      }
+    });
   });
 </script>

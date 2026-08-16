@@ -200,6 +200,28 @@ aside {
 .side-links a:hover {
   text-decoration: underline;
 }
+.contact-link {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.contact-link a {
+  overflow-wrap: anywhere;
+}
+.copy-email {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--color-muted-2);
+  cursor: pointer;
+}
+.copy-email:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
 
 /* Light/dark switch: styled as one more item in the link list rather than as
    a button, so it does not compete with the content. */
