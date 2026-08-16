@@ -13,7 +13,11 @@ export const profile = {
   location: "Guangzhou, China",
   photo,
   links: [
-    { label: "Email", href: "mailto:davychen2001@gmail.com" },
+    {
+      label: "davychen2001@gmail.com",
+      href: "mailto:davychen2001@gmail.com",
+      copyText: "davychen2001@gmail.com",
+    },
     { label: "Google Scholar", href: "https://scholar.google.com/citations?user=cA0SyB0AAAAJ" },
     { label: "GitHub", href: "https://github.com/Davy-Chendy" },
   ],
@@ -31,8 +35,8 @@ export const about = [
     "stable, efficient, and trustworthy.",
   "My work has appeared in NeurIPS, ICLR, and IEEE TPAMI. I enjoy working on " +
     "practical learning problems that connect robust optimization with real-world " +
-    "deployment. Please feel free to reach me by " +
-    "<a href='mailto:davychen2001@gmail.com'>email</a>.",
+    "deployment. Please feel free to reach me at " +
+    "<a href='mailto:davychen2001@gmail.com'>davychen2001@gmail.com</a>.",
 ];
 
 export const news = [
