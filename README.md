@@ -32,6 +32,6 @@ GitHub Pages uses **Deploy from a branch → main → / (root)**. Run `npm run l
 
 ## Content policy
 
-Updated from the October 2026 CV. Only published research is presented. Unpublished manuscripts, the full CV, telephone number, and birthday are intentionally excluded at the owner’s request. Publication wording and author information follow the supplied CV. Do not add private application documents to the deployment directory.
+Updated from the October 2026 CV. Publications lists published papers only; FATE appears as ongoing work in Research Experience at the owner’s request. LLM learning and editing are described as research interests. Review details, the full CV, telephone number, and birthday are excluded. Publication wording and author information follow the supplied CV. Do not add private application documents to the deployment directory.
 
 The migration retains the original portrait and contact links. The superseded Astro template is recoverable in Git history. Template attribution and both applicable MIT notices are retained in `LICENSE`.

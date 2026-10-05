@@ -75,7 +75,7 @@
       --callout-bg: #f0f7ff;
       --callout-border: #bfdbfe;
       --callout-text: #1e3a5f;
-      --max-width: 860px;
+      --max-width: 1160px;
     }
 
     * {
@@ -207,6 +207,7 @@
        MAIN CONTAINER CARD (SCHEME A FROSTED GLASS)
        ========================================================================== */
     .main-container {
+      width: calc(100% - 64px);
       max-width: var(--max-width);
       margin: 32px auto 48px;
       padding: 44px 50px 52px;
@@ -909,6 +910,7 @@
       }
 
       .main-container {
+        width: auto;
         margin: 14px 12px 32px;
         padding: 24px 18px 36px;
         border-radius: 16px;
@@ -1024,9 +1026,9 @@
 <p class="lead">I am <strong>Deyu Chen</strong> (<span lang="zh-CN">陈德宇</span>), a master’s student in Software Engineering at <a href="https://www.scut.edu.cn/en/" target="_blank" rel="noopener noreferrer">South China University of Technology</a>, supervised by <strong>Assoc. Prof. Qing Du</strong> and <strong>Prof. Mingkui Tan</strong>. I received my bachelor’s degree in Software Engineering from SCUT in 2024.</p>
 <p>My research focuses on <strong>test-time intelligence</strong>: enabling pre-trained models to learn and evolve during deployment. I am interested in test-time learning, adaptation, and editing for vision and large language models, with the goal of making deep models safer and more reliable in changing real-world environments.</p>
 <ul class="modern-list">
-  <li><strong>Continual and collaborative adaptation.</strong> Reusing knowledge over time and sharing it across devices, including devices with limited compute.</li>
-  <li><strong>Stable test-time learning.</strong> Understanding and preventing representation collapse under distribution shifts.</li>
-  <li><strong>Adaptive foundation models.</strong> Exploring how pre-trained models can improve from deployment-time data across tasks and domains.</li>
+  <li><strong>Unified test-time learning for foundation models.</strong> Developing adaptation methods that transfer across visual tasks and domains, so pre-trained models can keep learning during deployment.</li>
+  <li><strong>Reliable and collaborative adaptation.</strong> Preventing representation collapse and forgetting, while reusing and sharing knowledge across devices with different compute budgets.</li>
+  <li><strong>Test-time learning and editing for LLMs.</strong> I am also interested in how large language models can update their knowledge and behavior during deployment while preserving existing capabilities and reliability.</li>
 </ul>
 <div class="collab-callout">I welcome research discussions and collaborations on test-time intelligence and reliable machine learning. Reach me at <a href="mailto:davychen2001@gmail.com">davychen2001@gmail.com</a>.</div>
 
@@ -1083,6 +1085,11 @@
 </div>
 
 <h2 id="experience" class="section-title">Research Experience</h2>
+<div class="exp-card">
+  <div class="exp-header"><h3 class="exp-title">Unified Test-Time Learning for Vision Foundation Models</h3><div class="exp-date">May 2026 – Present</div></div>
+  <div class="exp-org">FATE · Ongoing research</div>
+  <div class="exp-desc">Developed a unified test-time learning framework for vision foundation models across heterogeneous visual tasks. Designed a stochastic-depth finetuning scheme to prepare task-relevant probes and a task-aligned anchor–probe objective for adaptation. Evaluated the framework across <strong>106 domains, 4 vision foundation models, and 4 heterogeneous tasks</strong>.</div>
+</div>
 <div class="exp-card">
   <div class="exp-header"><h3 class="exp-title">Degrade-Free Test-Time Model Adaptation</h3><div class="exp-date">May 2024 – Feb 2026</div></div>
   <div class="exp-org">Representation stability · Adapt in the Wild &amp; ZeroSiam</div>

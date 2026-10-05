@@ -17,6 +17,8 @@ for (const [, url] of html.matchAll(/\b(?:src|href)="([^"]+)"/g)) {
 for (const [, script] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) new vm.Script(script);
 assert.equal((html.match(/class="paper-card"/g) || []).length, 3, 'Expected three published papers');
 assert.equal((html.match(/class="patent-number"/g) || []).length, 3, 'Expected three granted patents');
-assert(!/Alex Chen|Stanford|placeholder|FATE|Under Review|137\s*2837|2001\/12|\.pdf["<]/i.test(html), 'Demo or non-public content in output');
+assert(!/Alex Chen|Stanford|placeholder|Under Review|137\s*2837|2001\/12|\.pdf["<]/i.test(html), 'Demo or non-public content in output');
+const publications = html.slice(html.indexOf('id="publications"'), html.indexOf('id="experience"'));
+assert(!publications.includes('FATE'), 'FATE belongs in research experience, not publications');
 assert(!/<!-- (PROFILE|CONTENT) -->|marked\.parse|fetch\(/.test(html), 'Content must be rendered at build time');
 console.log('Checks passed: content, anchors, assets, JavaScript syntax, and public-content boundaries.');
