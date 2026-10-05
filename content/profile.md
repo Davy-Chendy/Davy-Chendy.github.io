@@ -2,7 +2,7 @@
 <div>
   <h1 class="profile-name">Deyu Chen <span lang="zh-CN">陈德宇</span></h1>
   <p class="profile-role">M.S. Student in Software Engineering · South China University of Technology</p>
-  <p class="profile-research"><span class="label-strong">Research:</span> Test-Time Intelligence · Model Adaptation · Reliable Machine Learning</p>
+  <p class="profile-research"><span class="label-strong">Research:</span> Test-Time Intelligence · Degrade-Free Adaptation · Self-Evolving LLMs</p>
   <div class="quick-links">
     <!-- Google Scholar -->
     <a class="quick-link" href="https://scholar.google.com/citations?user=cA0SyB0AAAAJ" target="_blank" rel="noopener noreferrer">

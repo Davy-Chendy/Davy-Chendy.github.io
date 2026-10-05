@@ -1,12 +1,12 @@
 <h2 id="about-me" class="section-title">About Me</h2>
 <p class="lead">I am <strong>Deyu Chen</strong> (<span lang="zh-CN">陈德宇</span>), a master’s student in Software Engineering at <a href="https://www.scut.edu.cn/en/" target="_blank" rel="noopener noreferrer">South China University of Technology</a>, supervised by <strong>Assoc. Prof. Qing Du</strong> and <strong>Prof. Mingkui Tan</strong>. I received my bachelor’s degree in Software Engineering from SCUT in 2024.</p>
-<p>My research focuses on <strong>test-time intelligence</strong>: enabling pre-trained models to learn and evolve during deployment. I am interested in test-time learning, adaptation, and editing for vision and large language models, with the goal of making deep models safer and more reliable in changing real-world environments.</p>
+<p>My research focuses on <strong>test-time intelligence</strong>: enabling pre-trained models to learn and evolve during deployment. My work explores unified test-time learning and degrade-free adaptation for vision models, and my interests extend to self-evolving large language models that learn from new experiences while retaining existing capabilities.</p>
 <ul class="modern-list">
   <li><strong>Unified test-time learning for foundation models.</strong> Developing adaptation methods that transfer across visual tasks and domains, so pre-trained models can keep learning during deployment.</li>
-  <li><strong>Reliable and collaborative adaptation.</strong> Preventing representation collapse and forgetting, while reusing and sharing knowledge across devices with different compute budgets.</li>
-  <li><strong>Test-time learning and editing for LLMs.</strong> I am also interested in how large language models can update their knowledge and behavior during deployment while preserving existing capabilities and reliability.</li>
+  <li><strong>Degrade-free and collaborative adaptation.</strong> Preventing representation collapse and forgetting, while reusing and sharing knowledge across devices with different compute budgets.</li>
+  <li><strong>Self-evolving LLMs.</strong> I am also interested in how large language models can learn from new experiences and feedback during deployment, continually improving their capabilities while retaining what they have already learned.</li>
 </ul>
-<div class="collab-callout">I welcome research discussions and collaborations on test-time intelligence and reliable machine learning. Reach me at <a href="mailto:davychen2001@gmail.com">davychen2001@gmail.com</a>.</div>
+<div class="collab-callout">I welcome research discussions and collaborations on test-time intelligence, degrade-free adaptation, and self-evolving models. Reach me at <a href="mailto:davychen2001@gmail.com">davychen2001@gmail.com</a>.</div>
 
 <h2 id="news" class="section-title">News</h2>
 <ul class="modern-list">
