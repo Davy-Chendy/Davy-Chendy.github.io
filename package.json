@@ -1,22 +1,17 @@
 {
-  "name": "academic-homepage",
-  "version": "1.0.0",
-  "description": "A fast, single-page academic homepage template built with Astro. Edit one file, deploy to GitHub Pages.",
+  "name": "deyu-chen-homepage",
+  "version": "2.0.0",
   "private": true,
-  "license": "MIT",
   "type": "module",
+  "license": "MIT",
+  "description": "Deyu Chen\u2019s academic homepage, based on Laip11/academic-homepage-template.",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "lint": "oxlint",
-    "subset:cn": "node scripts/subset-cn-font.mjs",
-    "astro": "astro"
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "lint": "node scripts/check.mjs"
   },
-  "dependencies": {
-    "astro": "^7.2.2"
-  },
-  "devDependencies": {
-    "oxlint": "^1.75.0"
+  "engines": {
+    "node": ">=18"
   }
 }
