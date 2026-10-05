@@ -13,8 +13,8 @@ npm run build
 
 修改 `content/profile.md` 更新个人简介和链接；修改 `content/main.md` 更新学术内容。这两个文件使用 HTML 片段。修改后执行 `npm run build`，再刷新预览。
 
-`index.html` 是布局模板。构建会把内容直接嵌入 `dist/index.html`，正文无需 JavaScript 或外部 Markdown 服务即可阅读。请通过预览地址访问，不要直接打开未构建的模板。
+`templates/homepage.html` 是布局模板。本地构建会把内容直接嵌入根目录 `index.html`，并生成相同的 `dist/index.html` 用于预览。正文无需 JavaScript 或外部 Markdown 服务即可阅读。修改内容后，请一并提交生成的根目录 `index.html`。
 
-GitHub 仓库 Pages 的 Source 设置为 **GitHub Actions**；推送到 `main` 后会校验并发布 `dist/`。
+GitHub 仓库 Pages 设置为 **Deploy from a branch → main → / (root)**。本地运行 `npm run lint` 后提交并推送，直接发布根目录页面，不需要自定义 Actions 工作流。
 
 内容根据 2026 年 10 月提供的 CV 更新。按本人要求，仅展示已发表研究，不公开在审稿件、手机号、生日，也不提供完整 CV 下载。论文作者与标题采用所提供 CV 的版本。原 Astro 网站可从 Git 历史恢复。

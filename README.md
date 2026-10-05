@@ -20,14 +20,15 @@ After editing content, run `npm run build` and refresh the preview. `npm run pre
 
 - `content/profile.md`: name, affiliation, portrait, and contact links.
 - `content/main.md`: biography, news, publications, research, education, honors, and patents.
-- `index.html`: template, navigation, metadata, styling, and scroll behavior.
+- `templates/homepage.html`: template, navigation, metadata, styling, and scroll behavior.
+- `index.html`: generated, complete page served directly by GitHub Pages.
 - `images/photo.png`: portrait retained from the previous homepage.
 
-The `.md` files contain HTML fragments, following the original template’s format. A small dependency-free build embeds them into `dist/index.html` so the complete academic record is available without JavaScript or a third-party Markdown CDN. Open the preview URL, rather than the unbuilt template file.
+The `.md` files contain HTML fragments, following the original template’s format. Run `npm run build` locally to embed them into the root `index.html`, with a matching copy in `dist/` for preview. Commit the generated root page along with content edits. The complete academic record is readable without JavaScript or a third-party Markdown CDN.
 
 ## Publishing
 
-GitHub Pages must use **GitHub Actions** as its source. Pushing to `main` validates and deploys only `dist/`. The site is configured for `https://davy-chendy.github.io/`; update canonical/Open Graph URLs, `robots.txt`, and `sitemap.xml` if the domain changes.
+GitHub Pages uses **Deploy from a branch → main → / (root)**. Run `npm run lint` locally, commit the updated root `index.html`, and push to `main`. No custom Actions workflow is required. The site is configured for `https://davy-chendy.github.io/`; update canonical/Open Graph URLs, `robots.txt`, and `sitemap.xml` if the domain changes.
 
 ## Content policy
 
